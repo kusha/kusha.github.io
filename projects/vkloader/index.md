@@ -6,7 +6,7 @@
 
 1. Удостоверьтесь, что установлен `python3`, если нет, скачайте [отсюда](http://www.python.org/download/)
 2. Установите [eyeD3](http://eyed3.nicfit.net/#installation) для чистки и расстановки тегов через `pip` или `easy_instal`, потребуется консольная команда `eyed3` *(опционально)*
-3. Скачайте [скрипт](https://gist.github.com/kusha/112cae5af211ce440034/raw/f134a25b2d638a0f7adf547896fedf8a117b107a/vkloader.py)
+3. Скачайте [скрипт](https://gist.github.com/kusha/112cae5af211ce440034/raw/)
 3. Из терминала запустите скрипт командой `python3 vkloader.py`
 4. Введите абсолютный/относительный путь до папки назначения
 5. Откройте [ссылку](https://oauth.vk.com/authorize?client_id=3337774&scope=audio,offline&response_type=token&display=page), скопируйте адрес после редиректа в скрипт
@@ -30,3 +30,5 @@
 ## Исходники
 
 <script src="https://gist.github.com/kusha/112cae5af211ce440034.js"></script>
+
+Распространяется под лицензией WTFPL. Указание автора привествуется.
