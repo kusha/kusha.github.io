@@ -34,9 +34,9 @@ a#documentation {
 }
 
 #header {
-	/*border-bottom:1px solid #eee;*/
-	margin-bottom:40px;
-	padding-bottom:40px;
+	border-bottom:1px solid #eee;
+	margin-bottom:15px;
+	padding-bottom:20px;
 	text-align:center;
 	position:relative;
 }
@@ -53,6 +53,18 @@ a#documentation {
 	position: absolute; bottom: 10px; right: 10px;
 	height: 48px; width: 48px;
 }
+
+#navigation {
+	border-bottom:1px solid #eee;
+	margin-bottom:40px;
+	padding-bottom:15px;
+	text-align: center;
+}
+
+#navigation a {
+	margin: 0px 20px;
+}
+
 /*=========================================
 Typography
 =========================================== */
