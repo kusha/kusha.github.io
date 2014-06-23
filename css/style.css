@@ -14,6 +14,7 @@ Base
 body {
 	font:16px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:#777;
+	overflow-y: scroll;
 	-webkit-font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
@@ -64,6 +65,7 @@ a#documentation {
 #navigation a {
 	margin: 0px 20px;
 }
+
 
 /*=========================================
 Typography
