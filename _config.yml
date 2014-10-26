@@ -1,7 +1,7 @@
 # Site settings
-title:       Mark Birger
-email:       birgerm@yandex.ru
-author:      Mark Birger
+title:       Pixyll
+email:       your_email@example.com
+author:      John Otander
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
 url:         "http://markbirger.info"
@@ -10,14 +10,14 @@ url:         "http://markbirger.info"
 google_analytics:
 
 # Optional features
-animated:           true
+animated:           false
 show_related_posts: false
 show_post_footers:  false
 
 # Social icons
 show_social_icons: false
-github_username: kusha
-twitter_username: kusha1
+github_username:
+twitter_username:
 google_plus_id:
 linkedin_username:
 bitcoin_url:
