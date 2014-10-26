@@ -4,7 +4,7 @@ email:       your_email@example.com
 author:      John Otander
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
-url:         "http://kusha.github.io"
+url:         "http://markbirger.info"
 
 # Google analytics
 google_analytics:
