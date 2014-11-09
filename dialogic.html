@@ -3,29 +3,6 @@ layout: custom
 title: Dialogic
 permalink: /dialogic/
 ---
-<style>
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-</style>
 
 <p class="right">
 	<i><small>alpha 1011 @ 34h3</small></i>
@@ -38,15 +15,14 @@ permalink: /dialogic/
 <script>
     $(function(){
         $("#dialog").typed({
-            strings: ["First sentence.", "Second sentence."],
+            strings: ["Hello world"],
             typeSpeed: 0, // typing speed
             backSpeed: 0, // backspacing speed
             startDelay: 1500, // time before typing starts
             backDelay: 500, // pause before backspacing
             loop: false, // loop on or off (true or false)
             loopCount: false, // number of loops, false = infinite
-            showCursor: true,
-            customChar: '^',
+            showCursor: false,
             attr: null, // attribute to type, null = text for everything except inputs, which default to placeholder
             callback: function(){ } // call function after typing is done
         });
