@@ -8,5 +8,15 @@ permalink: /dialogic/
 	<i><small>alpha 1011 @ 34h3</small></i>
 </p>
 
-Test
+<div id="dialog"></div>
 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://raw.githubusercontent.com/mattboldt/typed.js/master/js/typed.js"></script>
+<script>
+  $(function(){
+      $("#dialog").typed({
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 0
+      });
+  });
+</script>
