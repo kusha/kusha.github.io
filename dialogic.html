@@ -4,18 +4,30 @@ title: Dialogic
 permalink: /dialogic/
 ---
 
+<style>
+.answer {
+	font-weight: bold;
+}
+.question {
+	font-weight: bold;
+}
+</style>
+
 <p class="right">
-	<i><small>alpha 1011 @ 34h3</small></i>
+	<small>alpha 1011 @ 34h3</small>
 </p>
 
-<div id="dialog"></div>
+<div id="dialog">
+	<p id="1" class="answer"></p>
+	<p id="2" class="question" contenteditable="true"></p>
+</div>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://raw.githubusercontent.com/mattboldt/typed.js/master/js/typed.js"></script>
 <script>
     $(function(){
-        $("#dialog").typed({
-            strings: ["<b>Hello world</b>","Hello"],
+        $("#1").typed({
+            strings: ["Hello world"],
             typeSpeed: 0, // typing speed
             backSpeed: 0, // backspacing speed
             startDelay: 2000, // time before typing starts
