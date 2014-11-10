@@ -9,7 +9,6 @@ permalink: /dialogic/
 	font-weight: bold;
 }
 .question {
-	font-weight: bold;
 }
 </style>
 
@@ -19,7 +18,7 @@ permalink: /dialogic/
 
 <div id="dialog">
 	<p id="1" class="answer"></p>
-	<p id="2" class="question" contenteditable="true"></p>
+	<p id="2" class="question"></p>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -38,6 +37,12 @@ permalink: /dialogic/
             attr: null, // attribute to type, null = text for everything except inputs, which default to placeholder
             callback: function(){ } // call function after typing is done
         });
-        $("#2").focus();
+        $("body").keypress(function( e ) {
+            if ( e.which == 13 ) {
+                alert("send");
+            } else {
+                ("#dialog p:last").append(String.fromCharCode(e.keyCode));
+            }
+        });
     });
 </script>
