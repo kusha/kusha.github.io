@@ -34,28 +34,28 @@ p {
 </span>
 
 <span id="dialog">
-	<p id="1" class="answer"></p>
+	<!-- <p id="1" class="answer"></p> -->
 	<!-- <p id="2" class="question"></p> -->
-    <input></input>
 </span>
+<input></input>
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://raw.githubusercontent.com/mattboldt/typed.js/master/js/typed.js"></script>
 <script>
     $(function(){
-        var msg_id = 1;
-        $("#1").typed({
-            strings: ["Hello world"],
-            typeSpeed: 0, // typing speed
-            backSpeed: 0, // backspacing speed
-            startDelay: 2000, // time before typing starts
-            backDelay: 500, // pause before backspacing
-            loop: false, // loop on or off (true or false)
-            loopCount: false, // number of loops, false = infinite
-            showCursor: false,
-            attr: null, // attribute to type, null = text for everything except inputs, which default to placeholder
-            callback: function(){ } // call function after typing is done
-        });
+        var msg_id = 0;
+        // $("#1").typed({
+        //     strings: ["Hello world"],
+        //     typeSpeed: 0, // typing speed
+        //     backSpeed: 0, // backspacing speed
+        //     startDelay: 2000, // time before typing starts
+        //     backDelay: 500, // pause before backspacing
+        //     loop: false, // loop on or off (true or false)
+        //     loopCount: false, // number of loops, false = infinite
+        //     showCursor: false,
+        //     attr: null, // attribute to type, null = text for everything except inputs, which default to placeholder
+        //     callback: function(){ } // call function after typing is done
+        // });
         $.ajax({
             url: 'http://dialog-instance.herokuapp.com/version',
             success: function (data, textStatus, jqXHR) {
