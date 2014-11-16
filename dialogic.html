@@ -47,9 +47,9 @@ permalink: /dialogic/
         });
         $.ajax({
             url: 'http://dialog-instance.herokuapp.com/version',
-            dataType: 'jsonp',
             success: function (data, textStatus, jqXHR) {
-                console.log(data);
+                var object = $.parseJSON(data);
+                console.log(object);
             }, error: function(jqXHR, textStatus, errorThrown) {
                 //Error handling code
                 alert('Oops there was an error');
