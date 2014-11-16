@@ -14,7 +14,7 @@ permalink: /dialogic/
 </style>
 
 <span class="right">
-	<small><span id="version"></span> @ <span id="data"></span></small>
+	<small id="version"></small>
 </span>
 
 <span id="dialog">
@@ -49,8 +49,8 @@ permalink: /dialogic/
             url: 'http://dialog-instance.herokuapp.com/version',
             success: function (data, textStatus, jqXHR) {
                 var object = $.parseJSON(data);
-                $("#version").html(object.version);
-                $("#data").html(object.data);
+                $("#version").html(object.version+" @ "+object.data);
+                $('#version').addClass('animated bounceOutLeft');
             }, error: function(jqXHR, textStatus, errorThrown) {
                 //Error handling code
                 alert('Oops there was an error');
