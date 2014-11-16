@@ -6,7 +6,7 @@ permalink: /dialogic/
 
 <style>
 .answer {
-	font-weight: bold;
+    
 }
 .question::after {
     content: "█";
@@ -44,6 +44,17 @@ permalink: /dialogic/
             } else {
                 $("#dialog p:last").append(String.fromCharCode(e.keyCode));
             }
+        });
+        $.ajax({
+          url: 'http://dialog-instance.herokuapp.com/version',
+          dataType: 'jsonp',
+          success: function (data, textStatus, jqXHR) {
+            console.log(data);
+           error: function(jqXHR, textStatus, errorThrown) {
+             //Error handling code
+             alert('Oops there was an error');
+           }
+          }
         });
     });
 </script>
