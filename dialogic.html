@@ -50,7 +50,7 @@ permalink: /dialogic/
             success: function (data, textStatus, jqXHR) {
                 var object = $.parseJSON(data);
                 $("#version").html(object.version+" @ "+object.data);
-                $('#version').addClass('animated bounceOutLeft');
+                // $('#version').addClass('animated bounceOutLeft');
             }, error: function(jqXHR, textStatus, errorThrown) {
                 //Error handling code
                 alert('Oops there was an error');
