@@ -81,7 +81,7 @@ p {
                     var object = $.parseJSON(data);
                     object.messages.forEach(function(message) {
                         msg_id = msg_id + 1;
-                        var new_msg = '<p id="'+msg_id+'" class="'+message.type+'">'+message.content+'</p>';
+                        var new_msg = '<p id="'+msg_id+'" class="'+message.type+' animated fade-in-down">'+message.content+'</p>';
                         $('#dialog').append(new_msg);
                     });
                 }, error: function(jqXHR, textStatus, errorThrown) {
