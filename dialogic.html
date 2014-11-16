@@ -46,15 +46,14 @@ permalink: /dialogic/
             }
         });
         $.ajax({
-          url: 'http://dialog-instance.herokuapp.com/version',
-          dataType: 'jsonp',
-          success: function (data, textStatus, jqXHR) {
-            console.log(data);
-           error: function(jqXHR, textStatus, errorThrown) {
-             //Error handling code
-             alert('Oops there was an error');
-           }
-          }
+            url: 'http://dialog-instance.herokuapp.com/version',
+            dataType: 'jsonp',
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+            }, error: function(jqXHR, textStatus, errorThrown) {
+                //Error handling code
+                alert('Oops there was an error');
+            }
         });
     });
 </script>
