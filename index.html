@@ -1,20 +1,90 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mark Birger</title>
 
-<div class="home">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto:300,900&subset=latin,cyrillic-ext);
+    body {
+    	font-family: "Roboto", 'Helvetica', Verdana, sans-serif;
+    	-webkit-font-smoothing: antialiased;
+    	font-weight: 300;
+    	padding: 50px 0;
+    }
+    @media screen and (max-width: 992px) {
+    	body {
+    		padding: 0 0 20px 0;
+    	}
+		h1 {
+	    	float: left !important;
+	    }
+	}
+    h1 {
+    	font-size: 4em;
+    	margin-bottom: 50px;
+    	padding: 25px;
+    	margin: 10px;
+    	float: right;
+    }
+    p {
+    	width: auto;
+    	height: auto;
+    	line-height: 75px;
+    	font-size: 75px;
+    	font-weight: 900;
+    	padding: 25px;
+    	margin: 10px;
+    	float: left;
+    	word-wrap: break-word;
+    	text-transform: uppercase;
+    	color:white;
+    }
+    p:hover {
+    	cursor: pointer;
+    	-webkit-filter: invert(100%);
+    	filter: invert(100%);
+    }
+    .disabled {
+    	background-color: #ccc;
+    }
+    p:hover {
+    	cursor: default;
+    	filter: none;
+    	-webkit-filter: none;
+    }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+<div class="row">
+  <div class="col-md-12" class="text-center">
+  	<h1>Mark Birger</h1>
+  	<!-- background-color: #7A35A0; -->
+  	<p class="disabled">post 2 json</p>
+  	<!-- background-color: #EF8546; -->
+  	<p class="disabled">dialog system</p>
   </div>
-
-  {% include pagination.html %}
 </div>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!-- <form action="https://forms.brace.io/birgerm@yandex.ru" method="POST" class="form-stacked form-light">
+    <input type="text" name="email" class="input mobile-block" placeholder="Email Address">
+    <textarea type="text" name="content" class="input mobile-block" rows="5" placeholder="What would you like to say?"></textarea>
+    <input type="submit" class="button button-blue button-big mobile-block" value="Say Hello">
+</form> -->
