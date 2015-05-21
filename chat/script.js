@@ -35,7 +35,7 @@ function show_online(number){
 
 var was_connected = false;
 status('Пробуем присоединится к серверу');
-var webSocket = new WebSocket('ws://localhost:8888/chat');
+var webSocket = new WebSocket('ws://178.62.192.111:8888/chat'); //178.62.192.111
 
 webSocket.onopen = function (event) {
     was_connected = true;
