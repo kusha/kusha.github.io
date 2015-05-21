@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Анонимный чат</title>
+    <title>Чат рулетка</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- <h4>Поиск собеседника...</h4>
 
     <p class="to_me">Итак посмотрим как тут обстоят дела с кириллицей Without caffeine, it would have been adenosine’s job to fit into those receptors and dial down the amount of neurotransmitters such as dopamine and serotonin, making you feel tired and drowsy. But caffeine stops adenosine and lets your neurotransmitters wild—in the process givin</p> -->
     <!-- <p class="from_me">Итак посмотрим как тут обстоят дела с кириллицей Without caffeine, it would have been adenosine’s job to fit into those receptors and dial down the amount of neurotransmitters such as dopamine and serotonin, making you feel tired and drowsy. But caffeine stops adenosine and lets your neurotransmitters wild—in the process givin</p> -->
+
+    <audio id="notificator" preload="auto" autobuffer> 
+      <source src="notification.mp3" />
+    </audio>
+
     <div id="menu">
       <div id="wrapper">
+        
         <!-- <div id="control">
           <span class="label"><i class="fa fa-bell-slash"></i></span>
         </div> -->
@@ -26,7 +32,7 @@
       </div>
     </div>
     <div id="content">
-      <p class="input locked" contenteditable="true"></p>
+      <p class="input locked" contenteditable="false"></p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

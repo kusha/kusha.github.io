@@ -6,7 +6,15 @@ function smooth_scroll(){
     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 }
 
+function play_notification() {
+    var player = document.getElementById('notificator');
+    player.pause();
+    player.currentTime = 0;
+    player.play();
+}
+
 function to_me(msg) {
+    play_notification();
     $('<p class="to_me">'+msg+'</p>' ).insertBefore( ".input" );
     smooth_scroll();
 }
@@ -21,6 +29,7 @@ function input_toggle(){
     $( ".input" ).toggleClass( "locked" );
     input_editable = ! input_editable;
     $(".input" ).attr('contenteditable', input_editable);
+    play_notification();
 }
 
 var online_showed = false;
@@ -52,6 +61,9 @@ webSocket.onmessage = function (event) {
       case "online":
         show_online(parsedMsg.number)
         break
+      case "confirmation":
+        from_me(parsedMsg.text);
+        break
       case "message":
         to_me(parsedMsg.text);
         break
@@ -65,6 +77,7 @@ webSocket.onclose = function (event) {
         status('Соединение прервано');
     } else {
         status('Не удается найти сервер');
+        status('Попробуйте <a href=".">обновить страницу</a>')
     }
 };
 
@@ -76,7 +89,6 @@ $("body").on('keydown', '.input', function(e) {
         msg.type = "message";
         $('.input').text("");
         webSocket.send(JSON.stringify(msg));
-        from_me(msg.text);
         e.preventDefault();
     }
 });

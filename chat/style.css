@@ -1,17 +1,22 @@
+html {
+    overflow-y: scroll;
+}
 body {
     -webkit-font-smoothing: antialiased;
     color: rgb(76, 76, 76);
     background-color: rgb(249, 249, 249);
     margin: 30px;
 }
+audio {
+  visibility: hidden;
+}
 #menu {
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
-  /*text-align: center;*/
-  /*background-color: rgba(249, 249, 249, 0.8);*/
-  padding: 10px;
+  background-color: rgba(249, 249, 249, 0.8);
+  padding: 10px 0px;
 }
 #control {
   float: left;
@@ -20,6 +25,7 @@ body {
 #info {
   float: right;
   text-align: right;
+  margin: 0px 30px;
 }
 .label {
   color: rgb(249, 249, 249);
@@ -30,11 +36,11 @@ body {
   font-weight: bold;
 }
 #wrapper {
-  width: 700px;
+  max-width: 600px;
   margin: 0px auto;
 }
 #content {
-  width: 600px;
+  max-width: 600px;
   margin: 40px auto;
 }
 h1 {
@@ -56,6 +62,10 @@ h4 {
 p {
     font-family:'PT Serif', Georgia, serif;
     font-size: 20px;
+    word-wrap:break-word;
+}
+a {
+ color: #1a4876;
 }
 .to_me {
     background-color: white;
@@ -72,6 +82,8 @@ p {
     padding:20px;
     outline:none;
     transition: all 1s;
+    min-height: 70px;
+    box-sizing: border-box;
 }
 .locked {
   border: 2px solid rgb(176, 176, 176);
