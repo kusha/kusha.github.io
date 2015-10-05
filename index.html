@@ -55,9 +55,9 @@
     	filter: invert(100%);
     }
     .disabled {
-    	background-color: #ccc;
+    	background-color: #ccc !important;
     }
-    p:hover {
+    .disabled:hover {
     	cursor: default;
     	filter: none;
     	-webkit-filter: none;
@@ -71,10 +71,9 @@
 <div class="row">
   <div class="col-md-12" class="text-center">
   	<h1>Mark Birger</h1>
-  	<!-- background-color: #7A35A0; -->
-  	<p class="disabled">post 2 json</p>
-  	<!-- background-color: #EF8546; -->
-  	<p class="disabled">dialog system</p>
+  	<p class="disabled" style="background-color: #7A35A0;">post 2 json</p>
+  	<p class="disabled" style="background-color: #EF8546;">dialog system</p>
+  	<a href="http://markbirger.info/instatags"><p class=""  style="background-color: #39609E;">instagram tags</p></a>
   </div>
 </div>
 	</div>
