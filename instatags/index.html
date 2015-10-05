@@ -32,14 +32,14 @@
     h1 {
     	font-size: 4em;
     	/*margin-bottom: 50px;*/
-    	padding: 25px 0 10px 0;
+    	padding: 25px 0 10px 15px;
         line-height: 75px;
     }
     h2 {
-        margin: 10px 0 20px 0;
+        margin: 10px 0 20px 15px;
+        padding-bottom: 10px;
     }
     #tags {
-        background-color: #fafafa;
         padding: 20px 10px;
         line-height: 35px;
     }
@@ -48,46 +48,49 @@
         height: auto;
         margin: 10px;
         word-wrap: break-word;
-        background-color: #ccc;
+        background-color: rgba(200, 200, 200, 0.4); 
         padding: 5px;
         font-weight: 900;
+        cursor: pointer;
     }
-/*    p {
-    	width: auto;
-    	height: auto;
-    	line-height: 75px;
-    	font-size: 75px;
-    	font-weight: 900;
-    	padding: 25px;
-    	margin: 10px;
-    	float: left;
-    	word-wrap: break-word;
-    	text-transform: uppercase;
-    	color:white;
+    #gallery {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
-    p:hover {
-    	cursor: pointer;
-    	-webkit-filter: invert(100%);
-    	filter: invert(100%);
+    .image {
+        float:left;
+        position: relative;
+        width: 10%;
+        margin: 0;
+        overflow:hidden;
     }
-    .disabled {
-    	background-color: #ccc !important;
-    }*/
-    /*p:hover {
-    	cursor: default;
-    	filter: none;
-    	-webkit-filter: none;
-    }*/
+    #header {
+        background-color: rgba(255, 255, 255, 0.6); 
+    }
+    #tags {
+        background-color: rgba(245, 245, 245, 0.6); 
+    }
     </style>
 
   </head>
   <body>
 
+  <div id="gallery">
+    <!-- <img class="image" src="https://scontent-vie1-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/12132777_445218278998123_1811661837_n.jpg"> -->
+  </div>
+
     <div class="container">
 <div class="row">
   <div class="col-md-12" class="text-center">
-  	<h1>Most popular instagram tags</h1>
-    <h2>top 1000, updated at 5th of October</h2>
+  	<div id="header">
+        <h1>Most popular instagram tags</h1>
+        <h2>top 1000, updated @ 5.10.2015</h2>
+    </div>
   	<p id="tags">
         <span class="tag">#love</span>
         <span class="tag">#instagood</span>
