@@ -25,6 +25,9 @@ defaultContentLanguage = "en"
     # [languages.en.params]
     #   linkedin = "https://linkedin.com/whoever"
 
+    [languages.en.params]
+      description = "Here will be a text about me (430 chars)."
+
     [languages.en.menu]
       [[languages.en.menu.main]]
         name = "Home"
@@ -47,6 +50,10 @@ defaultContentLanguage = "en"
     copyright = "Марк Биргер"
     languageName = "по-русски"
     weight = 2
+
+    [languages.ru.params]
+      description = "Здесь будет текст обо мне (430 chars)."
+
     [languages.ru.menu]
       [[languages.ru.menu.main]]
         name = "Главная"
@@ -73,7 +80,6 @@ defaultContentLanguage = "en"
   # googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
-  description = "Here will be a text about me (430 chars)."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
