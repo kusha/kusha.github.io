@@ -3,6 +3,7 @@ title: Климат в умном доме
 date: 2020-10-04
 tags:
     - умный дом
+    - климат
 category: tech
 keywords:
     - subtyping

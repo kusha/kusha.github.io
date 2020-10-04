@@ -8,7 +8,17 @@
     {
       "name":"Ant Colony",
       "url":"https://github.com/kusha/ant-colony",
-      "desc":"Playground to play with Ant Colony optimization."
+      "desc": {
+        "en": "Playground to play with Ant Colony optimization.",
+        "ru": "Окружение для экспериментов с колонией муравьев."
+      }
+    },
+    {
+      "name":"Dialog",
+      "url":"https://github.com/kusha/dialog",
+      "desc": {
+        "en": "Dialog system for robotic application."
+      }
     }
   ]
 }
