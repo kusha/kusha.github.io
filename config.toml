@@ -1,4 +1,4 @@
-baseURL = "http://kusha.github.io"
+baseURL = "https://kusha.github.io"
 languageCode = "en-us"
 title = "Mark Birger"
 theme = "cactus"
