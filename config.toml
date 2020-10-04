@@ -1,34 +1,14 @@
-baseURL = "https://example.com"
+baseURL = "http://kusha.github.io"
 languageCode = "en-us"
 title = "Mark Birger"
 theme = "cactus"
-copyright = "Mark Birger" # cactus will use title if copyright is not set
+copyright = "Mark Birger"
 # disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
 # googleAnalytics = "UA-1234-5"
-
+defaultContentLanguage = "en"
 
 # summaryLength = 2
 
-# Main menu which appears below site header.
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "Writings"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 3
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 4
 
 [markup]
   [markup.tableOfContents]
@@ -36,19 +16,69 @@ weight = 4
     ordered = false
     startLevel = 2
 
+[languages]
+  [languages.en]
+    title = "Mark Birger"
+    copyright = "Mark Birger"
+    languageName = "in English"
+    weight = 1
+    # [languages.en.params]
+    #   linkedin = "https://linkedin.com/whoever"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Writings"
+        url = "/posts"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Tags"
+        url = "/tags"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "About"
+        url = "/about"
+        weight = 4
+  [languages.ru]
+    title = "Марк Биргер"
+    copyright = "Марк Биргер"
+    languageName = "по-русски"
+    weight = 2
+    [languages.ru.menu]
+      [[languages.ru.menu.main]]
+        name = "Главная"
+        url = "/"
+        weight = 1
+      [[languages.ru.menu.main]]
+        name = "Посты"
+        url = "/posts"
+        weight = 2
+      [[languages.ru.menu.main]]
+        name = "Тэги"
+        url = "/tags"
+        weight = 3
+      [[languages.ru.menu.main]]
+        name = "Обо мне"
+        url = "/about"
+        weight = 4
+
 [params]
+  logo = "/images/logo.gif"
 
   colortheme = "white" # dark, light, white, or classic
-  rss = true # generate rss feed. default value is false
-  googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
+  # rss = true # generate rss feed. default value is false
+  # googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
-  description = "Description."
+  description = "Here will be a text about me (430 chars)."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true # show tags overview by default.
-  showProjectsList = false # show projects list by default (if projects data file exists).
+  showProjectsList = true # show projects list by default (if projects data file exists).
   projectsUrl = "https://github.com/gohugoio" # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
@@ -57,18 +87,24 @@ weight = 4
   # Post page settings
   show_updated = false # default
 
-#   [params.comments]
-#     enabled = false # default
-#     engine = "disqus" # more supported engines will be added.
+  [params.comments]
+    enabled = false # default
+    engine = "disqus" # more supported engines will be added.
 
   # the value of name should be an valid font awesome icon name (brands type)
   # https://fontawesome.com/icons?d=gallery&s=brands
   [[params.social]]
     name = "github"
     link = "https://github.com/kusha"
-#   [[params.social]]
-#     name = "linkedin"
-#     link = "https://www.linkedin.com/company/github/"
-#   [[params.social]]
-#     name = "email"
-#     link = "example@example.com"  # no need for "mailto:" in the head
+  [[params.social]]
+    name = "twitter"
+    link = "https://twitter.com/kusha1"
+  [[params.social]]
+    name = "telegram-plane"
+    link = "https://t.me/markkusha"
+  # [[params.social]]
+  #   name = "linkedin"
+  #   link = "https://www.linkedin.com/company/github/"
+  # [[params.social]]
+  #   name = "email"
+  #   link = "example@example.com"  # no need for "mailto:" in the head
