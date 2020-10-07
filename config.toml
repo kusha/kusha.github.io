@@ -28,7 +28,7 @@ publishDir = "docs"
     #   linkedin = "https://linkedin.com/whoever"
 
     [languages.en.params]
-      description = "Here will be a text about me (430 chars)."
+      description = "Python developer from Prague."
 
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -43,10 +43,10 @@ publishDir = "docs"
         name = "Tags"
         url = "/tags"
         weight = 3
-      [[languages.en.menu.main]]
-        name = "About"
-        url = "/about"
-        weight = 4
+      # [[languages.en.menu.main]]
+      #   name = "About"
+      #   url = "/about"
+      #   weight = 4
   [languages.ru]
     title = "Марк Биргер"
     copyright = "Марк Биргер"
@@ -54,7 +54,18 @@ publishDir = "docs"
     weight = 2
 
     [languages.ru.params]
-      description = "Здесь будет текст обо мне (430 chars)."
+      description = "Python разработчик из Праги."
+      [[languages.ru.params.social]]
+        name = "github"
+        link = "https://github.com/kusha"
+        action = "ставьте звездочки на"
+      # [[params.social]]
+      #   name = "twitter"
+      #   link = "https://twitter.com/kusha1"
+      [[languages.ru.params.social]]
+        name = "telegram-plane"
+        link = "https://t.me/markkusha"
+        action = "пишите мне в"
 
     [languages.ru.menu]
       [[languages.ru.menu.main]]
@@ -69,10 +80,10 @@ publishDir = "docs"
         name = "Тэги"
         url = "/tags"
         weight = 3
-      [[languages.ru.menu.main]]
-        name = "Обо мне"
-        url = "/about"
-        weight = 4
+      # [[languages.ru.menu.main]]
+      #   name = "Обо мне"
+      #   url = "/about"
+      #   weight = 4
 
 [params]
   logo = "/images/logo.gif"
@@ -105,12 +116,14 @@ publishDir = "docs"
   [[params.social]]
     name = "github"
     link = "https://github.com/kusha"
-  [[params.social]]
-    name = "twitter"
-    link = "https://twitter.com/kusha1"
+    action = "star my projects on"
+  # [[params.social]]
+  #   name = "twitter"
+  #   link = "https://twitter.com/kusha1"
   [[params.social]]
     name = "telegram-plane"
     link = "https://t.me/markkusha"
+    action = "contact me via"
   # [[params.social]]
   #   name = "linkedin"
   #   link = "https://www.linkedin.com/company/github/"
