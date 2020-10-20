@@ -20,7 +20,7 @@ keywords:
 После сравнения доступных вариантов для автоматизации отопления в квартире я пришел к решению купить термоголовки [eQ3 Bluetooth](https://www.eq-3.com/products/homematic/detail/bluetooth-smart-radiator-thermostat.html).
 
 
-![eQ3 Smart Radiator thermostat](/images/posts/climate/eq3.png)
+{{< figure src="images/eq3.png" title="eQ3 Bluetooth" width="400" >}}
 
 
 Основные преимущества этого решения в том, что они:
