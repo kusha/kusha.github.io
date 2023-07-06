@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Mark Birger</copyright>
-    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://markbirger.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://markbirger.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calibrating 3D printer with RRF</title>
+      <link>https://markbirger.com/posts/2023-07-01-calibrating-rrf-boards/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://markbirger.com/posts/2023-07-01-calibrating-rrf-boards/</guid>
+      <description>Calibrating 3D printer with RRF I really enjoy the fact that RRF boards use gcode for calibration, although I found a few specific issues with calibration.
+If the PID autotune command (e.g. M303 E0 S200 C8) returns &amp;ldquo;No heater has been tuned since startup,&amp;rdquo; it means that E0 is an invalid reference to the heater element. Try using H0 and H1 instead of E-1 and E0.
+Tools suggestions The best tool that I know for calibration is Teaching Tech 3D Printer Calibration .</description>
+    </item>
+    
     <item>
       <title>Climate in smart home</title>
       <link>https://markbirger.com/posts/2020-10-04-smart-home-climate/</link>
@@ -16,7 +27,7 @@
       <guid>https://markbirger.com/posts/2020-10-04-smart-home-climate/</guid>
       <description>Climate in a Smart Home Autumn has come, and with it the heating season. This means that it is no longer comfortable to be at home without heating.
 In the apartment where I live, there are radiators with valves for adjusting the flow of hot water, and each radiator is equipped with calorimeters that simplify the process of collecting heating consumption data (so it makes sense to save energy).
-After comparing the available options for automating the heating in the apartment, I decided to buy eQ3 Bluetooth thermostatic valves.</description>
+After comparing the available options for automating the heating in the apartment, I decided to buy eQ3 Bluetooth thermostatic valves .</description>
     </item>
     
   </channel>

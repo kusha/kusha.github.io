@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rrf on Mark Birger</title>
+    <link>https://markbirger.com/tags/rrf/</link>
+    <description>Recent content in rrf on Mark Birger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Mark Birger</copyright>
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://markbirger.com/tags/rrf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calibrating 3D printer with RRF</title>
+      <link>https://markbirger.com/posts/2023-07-01-calibrating-rrf-boards/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://markbirger.com/posts/2023-07-01-calibrating-rrf-boards/</guid>
+      <description>Calibrating 3D printer with RRF I really enjoy the fact that RRF boards use gcode for calibration, although I found a few specific issues with calibration.
+If the PID autotune command (e.g. M303 E0 S200 C8) returns &amp;ldquo;No heater has been tuned since startup,&amp;rdquo; it means that E0 is an invalid reference to the heater element. Try using H0 and H1 instead of E-1 and E0.
+Tools suggestions The best tool that I know for calibration is Teaching Tech 3D Printer Calibration .</description>
+    </item>
+    
+  </channel>
+</rss>
