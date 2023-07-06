@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mark Birger</title><link>https://kusha.github.io/</link><description>Recent content on Mark Birger</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Mark Birger</copyright><lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kusha.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Climate in smart home</title><link>https://kusha.github.io/posts/2020-10-04-smart-home-climate/</link><pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate><guid>https://kusha.github.io/posts/2020-10-04-smart-home-climate/</guid><description>Climate in smart home text of the post</description></item><item><title>About me</title><link>https://kusha.github.io/about/</link><pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate><guid>https://kusha.github.io/about/</guid><description>about me</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mark Birger</title>
+    <link>https://markbirger.com/</link>
+    <description>Recent content on Mark Birger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Mark Birger</copyright>
+    <lastBuildDate>Sun, 04 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://markbirger.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Climate in smart home</title>
+      <link>https://markbirger.com/posts/2020-10-04-smart-home-climate/</link>
+      <pubDate>Sun, 04 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://markbirger.com/posts/2020-10-04-smart-home-climate/</guid>
+      <description>Climate in a Smart Home Autumn has come, and with it the heating season. This means that it is no longer comfortable to be at home without heating.
+In the apartment where I live, there are radiators with valves for adjusting the flow of hot water, and each radiator is equipped with calorimeters that simplify the process of collecting heating consumption data (so it makes sense to save energy).
+After comparing the available options for automating the heating in the apartment, I decided to buy eQ3 Bluetooth thermostatic valves.</description>
+    </item>
+    
+  </channel>
+</rss>

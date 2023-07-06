@@ -11,81 +11,15 @@ publishDir = "docs"
 
 # summaryLength = 2
 
-
 [markup]
   [markup.tableOfContents]
     endLevel = 4
     ordered = false
     startLevel = 2
 
-[languages]
-  [languages.en]
-    title = "Mark Birger"
-    copyright = "Mark Birger"
-    languageName = "in English"
-    weight = 1
-    # [languages.en.params]
-    #   linkedin = "https://linkedin.com/whoever"
-
-    [languages.en.params]
-      description = "Python developer from Prague."
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-      [[languages.en.menu.main]]
-        name = "Writings"
-        url = "/posts"
-        weight = 2
-      [[languages.en.menu.main]]
-        name = "Tags"
-        url = "/tags"
-        weight = 3
-      # [[languages.en.menu.main]]
-      #   name = "About"
-      #   url = "/about"
-      #   weight = 4
-  [languages.ru]
-    title = "Марк Биргер"
-    copyright = "Марк Биргер"
-    languageName = "по-русски"
-    weight = 2
-
-    [languages.ru.params]
-      description = "Python разработчик из Праги."
-      [[languages.ru.params.social]]
-        name = "github"
-        link = "https://github.com/kusha"
-        action = "ставьте звездочки на"
-      # [[params.social]]
-      #   name = "twitter"
-      #   link = "https://twitter.com/kusha1"
-      [[languages.ru.params.social]]
-        name = "telegram-plane"
-        link = "https://t.me/markkusha"
-        action = "пишите мне в"
-
-    [languages.ru.menu]
-      [[languages.ru.menu.main]]
-        name = "Главная"
-        url = "/"
-        weight = 1
-      [[languages.ru.menu.main]]
-        name = "Посты"
-        url = "/posts"
-        weight = 2
-      [[languages.ru.menu.main]]
-        name = "Тэги"
-        url = "/tags"
-        weight = 3
-      # [[languages.ru.menu.main]]
-      #   name = "Обо мне"
-      #   url = "/about"
-      #   weight = 4
-
 [params]
+  description = "Senior Software Engineer from Prague."
+
   logo = "/images/logo.gif"
 
   colortheme = "white" # dark, light, white, or classic
@@ -121,12 +55,27 @@ publishDir = "docs"
   #   name = "twitter"
   #   link = "https://twitter.com/kusha1"
   [[params.social]]
+    name = "linkedin"
+    link = "https://cz.linkedin.com/in/mark-birger"
+    action = "connect on"
+  [[params.social]]
     name = "telegram-plane"
     link = "https://t.me/markkusha"
     action = "contact me via"
   # [[params.social]]
-  #   name = "linkedin"
-  #   link = "https://www.linkedin.com/company/github/"
-  # [[params.social]]
   #   name = "email"
   #   link = "example@example.com"  # no need for "mailto:" in the head
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Writings"
+    url = "/posts"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 3
